@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat's Marketplace</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="icon" type="image/png" href="https://images.icon-icons.com/1446/PNG/512/22221cat_98748.png">
+
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* Gradient Background for Hero Section */
+    .gradient-background {
+      background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    /* Hero Section Styling */
+    #title .btn {
+        border-radius: 20px;
+        font-weight: 600;
+    }
+    
+    #title .hero-image {
+        max-width: 80%;
+        height: auto;
+    }
+
+    /* Features Section Styling */
+    .gradient-text {
+      background: linear-gradient(90deg, #ff5858, #f09819, #23a6d5, #23d5ab);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .feature-icon {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 1rem;
+      background: #f8f9fa;
+    }
+    
+    .feature-icon img {
+        max-width: 60px;
+    }
+    
+    /* Testimonial Section Styling */
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Pricing Section */
+    .pricing-card {
+        transition: transform 0.2s ease-in-out;
+    }
+    .pricing-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    /* Footer */
+    .footer-icon {
+      width: 100px;
+      height: auto;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<section id="title" class="gradient-background d-flex align-items-center" style="min-height: 100vh;">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left side: Text -->
+      <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+        <h1 class="display-3 fw-bold">Welcome To Cat's Marketplace</h1>
+        <p class="lead mb-4">Your one-stop shop for the most paw-some cats around!</p>
+        <button class="btn btn-light btn-lg rounded-pill me-3">Buy</button>
+        <button class="btn btn-dark btn-lg rounded-pill">Sell</button>
+      </div>
+
+      <!-- Right side: Image -->
+      <div class="col-lg-6 text-center">
+        <img class="img-fluid" src="https://png.pngtree.com/png-clipart/20230516/original/pngtree-crafty-cat-selling-wares-in-a-cozy-booth-png-image_9162647.png" alt="Cat's shop" style="max-height: 400px;" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section id="features" class="py-5">
+    <div class="container px-4 py-5">
+      <h2 class="pb-2 border-bottom text-center display-5 fw-bold gradient-text">We Are Committed To Quality</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
+        <div class="col d-flex flex-column align-items-center text-center">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center p-3 mb-3">
+            <img src="https://www.vhv.rs/dpng/d/582-5822063_transparent-sell-icon-png-buy-and-sell-png.png" alt="buy-sell icon">
+          </div>
+          <h3 class="fs-4 fw-semibold">Easy to Buy and Sell</h3>
+          <p class="text-muted">Even cats can find their new friends easily on our platform.</p>
+        </div>
+
+        <div class="col d-flex flex-column align-items-center text-center">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center p-3 mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/256/5351/5351674.png" alt="quality icon">
+          </div>
+          <h3 class="fs-4 fw-semibold">3-Step Quality Checks</h3>
+          <p class="text-muted">We have all the cats, and they’re all top-notch and healthy.</p>
+        </div>
+        
+        <div class="col d-flex flex-column align-items-center text-center">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center p-3 mb-3">
+            <img src="https://cdn-icons-png.freepik.com/256/3307/3307001.png?semt=ais_hybrid" alt="love icon">
+          </div>
+          <h3 class="fs-4 fw-semibold">Stress-Busting Guarantee</h3>
+          <p class="text-muted">Find the love of your cat's life — or your money back.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 display-5 fw-bold">Customer Reviews</h2>
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img class="profile-img my-3" src="https://i.ibb.co/zpn5V3t/IMG-2454.jpg" alt="cat profile picture">
+              <p class="card-text fst-italic">"I was once a lonely cat, but now I found a bunch of my hoodies back side!"</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Fatty Cat from Dindigul</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img class="profile-img my-3" src="https://i.ibb.co/Q2cXhGJ/IMG-0245.jpg" alt="cat profile picture">
+              <p class="card-text fst-italic">"This place made my purrs even louder. Truly the best for kitties!"</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Happy Cat from Chennai</small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img class="profile-img my-3" src="https://i.ibb.co/Fk8xzkgS/IMG-4784.jpg" alt="cat profile picture">
+              <p class="card-text fst-italic">"My whiskers tingle with joy every time I come here. Absolutely recommended!"</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Content Cat from Coimbatore</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img class="profile-img my-3" src="https://i.ibb.co/Cp4VBbVY/7-B00-D3-FD-C207-4-B7-E-A86-C-407-CE94-B1-C2-C.jpg" alt="cat profile picture">
+              <p class="card-text fst-italic">"My life changed when I found these paw-some folks. Soosy forever!"</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Playful Cat from Madurai</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-5">
+    <div class="container py-3">
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">A Plan for Every Cat's Needs</h1>
+        <p class="fs-5 text-muted">Simple and affordable price plans for you and your cat.</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm pricing-card">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Naatu Poonai</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">Rs.1000</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Bad Habits</li>
+                <li>Durr Sound While Sleep</li>
+                <li>Less Beauty</li>
+                <li>Low Maintenance</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm pricing-card">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Persian Cat</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">Rs.8000</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Good Habits</li>
+                <li>Less Engine Sound</li>
+                <li>Good Beauty</li>
+                <li>High Maintenance</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Book Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary pricing-card">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Enterprise Soosy</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">Rs.299999<small class="text-muted fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Very Lazy</li>
+                <li>Loves Food</li>
+                <li>Gift With Mini Bell</li>
+                <li>Highly Exclusive!</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Test Your Luck</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="display-6 text-center mb-4">Compare Cats</h2>
+      <div class="table-responsive">
+        <table class="table text-center align-middle">
+          <thead>
+            <tr>
+              <th style="width: 34%;"></th>
+              <th style="width: 22%;">Naatu Poonai</th>
+              <th style="width: 22%;">Persian Cat</th>
+              <th style="width: 22%;">Enterprise Soosy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Easy to Buy</th>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Naughty</th>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Convenient</th>
+              <td>✔️</td>
+              <td>❌</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Goes on Outings</th>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Social Media Star</th>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Rare</th>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <img src="https://media.tenor.com/_WZy7E7hoTcAAAAM/cat-smile.gif" class="footer-icon mb-3" alt="Footer Cat Icon">
+      <p class="lead">Cat's Marketplace</p>
+      <p>© Copyright by Soosy 2017–2025</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
